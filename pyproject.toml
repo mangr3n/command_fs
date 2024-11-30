@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "command-fs"
+version = "0.1.0"
+description = "A FUSE filesystem that executes commands and returns their output as file content"
+authors = ["mangr3n"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+command-fs = "command_fs.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fusepy = "^3.0.1"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+black = "^24.10.0"
+mypy = "^1.13.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

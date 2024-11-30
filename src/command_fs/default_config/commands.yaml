@@ -1,0 +1,13 @@
+commands:
+  date:
+    description: Show current date and time
+    command: date
+  uptime:
+    description: Show system uptime
+    command: uptime
+  df:
+    description: Show disk space usage
+    command: df -h
+  ps:
+    description: Show process list
+    command: ps aux

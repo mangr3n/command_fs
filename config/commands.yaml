@@ -1,0 +1,34 @@
+---
+commands:
+  # Special commands
+  index:
+    description: "Lists available commands and their descriptions"
+    type: "internal"  # special handling for this one
+  exit:
+    description: "Unmounts the filesystem"
+    type: "internal"  # special handling for this one
+
+  # System commands
+  date:
+    filename: "datetime"  # this is what shows up in the filesystem
+    description: "Current date and time"
+    command: "date '+%Y-%m-%d %H:%M:%S %Z'"
+    timeout: 5
+  
+  sys-uptime:
+    filename: "uptime"
+    description: "System uptime information"
+    command: "uptime"
+    timeout: 5
+  
+  current-user:
+    filename: "whoami"
+    description: "Current user name"
+    command: "whoami"
+    timeout: 5
+  
+  process-list:
+    filename: "ps"
+    description: "List of running processes"
+    command: "ps aux"
+    timeout: 10
